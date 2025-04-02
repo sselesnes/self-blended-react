@@ -10,6 +10,8 @@
 //   );
 // }
 
+// https://react.dev/learn/passing-props-to-a-component
+
 export default function Product({ name, alt = "default alt text" }) {
   const randomPrice = (Math.random() * 100).toFixed(2);
   const randomImg = `https://picsum.photos/320/200?random=${Math.floor(randomPrice)}`;

@@ -41,6 +41,9 @@ import Product from "./Product";
 //     </div>
 //   );
 // }
+
+// https://react.dev/learn/conditional-rendering
+
 let arr = [0, 1, 0];
 export default function App() {
   return (
