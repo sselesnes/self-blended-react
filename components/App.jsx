@@ -29,8 +29,6 @@
 // }
 // export default App;
 
-import Product from "./Product";
-
 // export default function App() {
 //   return (
 //     <div>
@@ -44,14 +42,21 @@ import Product from "./Product";
 
 // https://react.dev/learn/conditional-rendering
 
+import Product from "./Product";
+import Book from "./Book";
+
 let arr = [0, 1, 0];
+
 export default function App() {
   return (
     <>
       <h1>Products</h1>
-      {arr[0] == true && <Product name="Picture1" alt="alt pic 1" />}
-      {arr[1] == true && <Product name="Picture2" />}
+      {arr[0] === 1 && <Product name="Picture1" alt="alt pic 1" />}
+      {arr[1] === 1 && <Product name="Picture2" />}
       {arr[2] === 1 ? <Product name="Picture3" alt="alt pic 3" /> : <p>No Picture3</p>}
+
+      <h1>Books</h1>
+      <Book />
     </>
   );
 }
